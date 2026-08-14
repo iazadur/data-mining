@@ -1,0 +1,37 @@
+--- PREPROCESSING & EDA METRICS ---
+Shape: (1000, 18)
+Null Count: {'Transaction ID': 0, 'Date': 0, 'Customer ID': 0, 'Gender': 0, 'Age': 0, 'Product Category': 0, 'Quantity': 0, 'Price per Unit': 0, 'Total Amount': 0, 'Year': 0, 'Month': 0, 'Month_Name': 0, 'DayOfWeek': 0}
+Duplicate Rows: 0
+Gender Distribution:
+{'Female': 510, 'Male': 490}
+
+Category Sales:
+[{'Product Category': 'Beauty', 'Total Amount': 143515}, {'Product Category': 'Clothing', 'Total Amount': 155580}, {'Product Category': 'Electronics', 'Total Amount': 156905}]
+
+--- CLASSIFICATION RESULTS ---
+Decision Tree:
+  Accuracy: 0.3300
+  Precision: 0.3401
+  Recall: 0.3300
+  F1-Score: 0.3259
+
+Random Forest:
+  Accuracy: 0.3000
+  Precision: 0.2993
+  Recall: 0.3000
+  F1-Score: 0.2975
+
+--- CLUSTERING RESULTS ---
+Optimal K: 4
+Silhouette Scores: {2: np.float64(0.3917), 3: np.float64(0.3355), 4: np.float64(0.3575), 5: np.float64(0.3555), 6: np.float64(0.3746), 7: np.float64(0.372), 8: np.float64(0.3878)}
+Cluster Profiles:
+{'Age': {0: 42.0939226519337, 1: 41.75432525951557, 2: 41.926984126984124, 3: 39.53023255813954}, 'Quantity': {0: 1.4640883977900552, 1: 3.5536332179930796, 2: 1.5047619047619047, 3: 3.4790697674418603}, 'Price per Unit': {0: 410.49723756906076, 1: 35.50173010380623, 2: 35.01587301587302, 3: 392.09302325581393}, 'Total Amount': {0: 603.8674033149172, 1: 126.45328719723183, 2: 52.55555555555556, 3: 1365.5813953488373}}
+
+--- REGRESSION RESULTS ---
+Linear Regression:
+  R2 Score: 0.8569
+  MAE: 172.9514
+  MSE: 41877.9831
+  RMSE: 204.6411
+  Coefficients: {'Age': np.float64(-0.8987), 'Quantity': np.float64(179.579), 'Price per Unit': np.float64(2.486), 'Gender_Encoded': np.float64(11.8839)}
+  Intercept: -406.3690

@@ -1,0 +1,32 @@
+--- PREPROCESSING & EDA METRICS ---
+Dataset Shape: (51290, 21)
+Null Count: {'Order_Date': 0, 'Time': 0, 'Aging': 0, 'Customer_Id': 0, 'Gender': 0, 'Device_Type': 0, 'Customer_Login_type': 0, 'Product_Category': 0, 'Product': 0, 'Sales': 1, 'Quantity': 2, 'Discount': 1, 'Profit': 0, 'Shipping_Cost': 1, 'Order_Priority': 2, 'Payment_method': 0}
+Duplicate Rows: 0
+
+--- CLASSIFICATION RESULTS ---
+Decision Tree:
+  Accuracy: 0.5950
+  Precision: 0.5112
+  Recall: 0.5950
+  F1-Score: 0.5157
+
+Random Forest:
+  Accuracy: 0.5925
+  Precision: 0.4774
+  Recall: 0.5925
+  F1-Score: 0.4737
+
+--- CLUSTERING RESULTS ---
+Optimal K: 4
+Silhouette Scores: {2: np.float64(0.5587), 3: np.float64(0.5052), 4: np.float64(0.4937), 5: np.float64(0.4285), 6: np.float64(0.4185), 7: np.float64(0.3597)}
+Cluster Profiles:
+{'Sales': {0: 220.4922997946612, 1: 99.0631345177665, 2: 222.2191894127378, 3: 97.96293311845287}, 'Quantity': {0: 4.099075975359343, 1: 1.2769670050761421, 2: 1.335401157981803, 3: 4.017727639000806}, 'Profit': {0: 113.79337782340862, 1: 36.51240482233503, 2: 128.28296112489662, 3: 23.589806607574538}, 'Shipping_Cost': {0: 11.376745379876798, 1: 3.6554885786802034, 2: 12.8287841191067, 3: 2.3588235294117648}}
+
+--- REGRESSION RESULTS ---
+Multiple Linear Regression:
+  R2 Score: 1.0000
+  MAE: 0.2492
+  MSE: 0.0850
+  RMSE: 0.2916
+  Coefficients: {'Sales': np.float64(0.0012), 'Quantity': np.float64(0.0012), 'Discount': np.float64(0.07), 'Shipping_Cost': np.float64(9.9866)}
+  Intercept: -0.1164

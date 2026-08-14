@@ -74,16 +74,23 @@ html_style = """
     }
     code {
         font-family: Courier, monospace;
-        background-color: #edf2f7;
+        background-color: #f1f5f9;
+        color: #0f172a;
         padding: 2px 4px;
         font-size: 8.5pt;
     }
     pre {
-        background-color: #1a202c;
-        color: #f7fafc;
+        background-color: #f8fafc;
+        color: #0f172a;
+        border: 1px solid #cbd5e0;
         padding: 10px;
         font-size: 8pt;
         margin-bottom: 12px;
+    }
+    pre code {
+        background-color: transparent;
+        color: inherit;
+        padding: 0;
     }
     img {
         max-width: 500px;
